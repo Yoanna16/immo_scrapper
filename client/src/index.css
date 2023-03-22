@@ -38,10 +38,44 @@ body {
 }
 
 .grid .card {
-  box-shadow: 0 10px 10px rgba(9, 17, 22, 0.5);
+  box-shadow: 0 10px 10px rgb(106 128 142 / 50%);
+  border-radius: 5px;
+  padding: 10px;
 }
 
 
+.card-btn {
+  cursor: pointer;
+  text-decoration: none;
+  font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  color: var(--text-color);
+}
+
+.card:hover {
+  background-color: var(--input-color);
+}
+
+/* Search */
+.form input {
+  background-color: var(--input-color);
+  padding: 12px;
+  font-family: inherit;
+  border: none;
+  border-radius: 5px;
+  color: var(--text-color);
+  width: 20%;
+}
+
+.form input::placeholder {
+  color: var(--text-color);
+}
+
+.div-search {
+  padding: 20px;
+  margin-top: 20px;
+}
 
 
 @media (min-width: 640px) {
@@ -57,7 +91,7 @@ body {
 }
 
 @media (min-width: 992px) {
-  .header, .grid {
+  .header, .grid, .div-search {
     padding: 20px 100px;
   }
   
