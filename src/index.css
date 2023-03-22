@@ -27,3 +27,42 @@ body {
   background-color: var(--input-color);
   padding: 10px 20px;
 }
+
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 20px;
+}
+
+.grid .card {
+  box-shadow: 0 10px 10px rgba(9, 17, 22, 0.5);
+}
+
+
+
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .header, .grid {
+    padding: 20px 100px;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+  }
+}
